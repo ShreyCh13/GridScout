@@ -1407,7 +1407,7 @@ function SubmitButton({
 
           // Send to backend
           // Replace with the backend server's IP address (e.g., 'http://192.168.1.100:5001/api/submit')
-          const backendUrl = 'const backendUrl = 'https://gridscout.onrender.com/api/submit';';
+          const backendUrl = 'https://gridscout.onrender.com/api/submit';
 
           try {
             const response = await fetch(backendUrl, {
