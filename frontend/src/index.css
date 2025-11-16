@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/* Custom range input styling for Safari and other browsers */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Track styling */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, #334155, #10b981);
+  height: 0.375rem;
+  border-radius: 0.5rem;
+}
+
+input[type="range"]::-moz-range-track {
+  background: linear-gradient(to right, #334155, #10b981);
+  height: 0.375rem;
+  border-radius: 0.5rem;
+}
+
+/* Thumb styling */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -0.25rem;
+  background-color: #10b981;
+  height: 0.875rem;
+  width: 0.875rem;
+  border-radius: 50%;
+  border: 2px solid #0f172a;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3);
+}
+
+input[type="range"]::-moz-range-thumb {
+  background-color: #10b981;
+  height: 0.875rem;
+  width: 0.875rem;
+  border-radius: 50%;
+  border: 2px solid #0f172a;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3);
+}
+
+/* Focus state */
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.5);
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.5);
+}
